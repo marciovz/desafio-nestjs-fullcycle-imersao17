@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:3000/api
+
+# @name get_all_assets
+GET {{baseUrl}}/assets
+
+
+###
+# @name create_assets
+POST {{baseUrl}}/assets
+content-type: application/json
+
+{
+  "id": "04",
+  "symbol": "0404040404"
+}
+
+
+###
+# @name get_all_orders
+GET {{baseUrl}}/orders
+
+
+###
+# @name create_orders
+POST {{baseUrl}}/orders
+content-type: application/json
+
+{
+  "asset_id": "05",
+  "price": 11.11
+}
